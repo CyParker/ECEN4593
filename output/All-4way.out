@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------
+              All-4way.conf         Simulation Results 
+-------------------------------------------------------------------------
+
+	Memory System:
+		Dcache size = 8192 : ways = 4 : block size = 32
+		Icache size = 8192 : ways = 4 : block size = 32
+		L2cache size = 32768 : ways = 4 : block size = 32
+		Memory read time = 50 : chuncksize = 16 : chuncktime = 20
+
+	Execute time = 3130154;	Total refs = 1000000
+	Inst refs = 758594;	Data refs = 241406
+
+	Number of reference types:  [Percentage]
+		Reads  = 179806	[17.98%]
+		Writes = 61600	[6.16%]
+		Inst.  = 758594	[75.86%]
+		Total  = 1000000
+
+	Total cycles for activities:  [Percentage]
+		Reads  = 1332820	[42.58%]
+		Writes = 367119	[11.73%]
+		Inst.  = 1430215	[45.69%]
+		Total  = 3130154
+
+	Average cycles per activity:
+		Read = 7.41; Write = 5.96; Inst. = 1.00
+	Ideal: Exec. Time = 1758594; CPI = 2.32
+	Ideal mis-aligned: Exec. Time = 2448461; CPI = 3.23
+
+	Memory Level:  L1i
+		Hit Count = 1303792	Miss Count = 1373
+		Total Requests = 1305165
+		Hit Rate = 99.89%	Miss Rate = 0.11%
+		Kickouts = 1117; Dirty kickouts = 0;
+
+	Memory Level:  L1d
+		Hit Count = 373777	Miss Count = 10925
+		Total Requests = 384702
+		Hit Rate = 97.16%	Miss Rate = 2.84%
+		Kickouts = 10669; Dirty kickouts = 2343;
+
+	Memory Level:  L2
+		Hit Count = 7867	Miss Count = 6774
+		Total Requests = 14641
+		Hit Rate = 53.73%	Miss Rate = 46.27%
+		Kickouts = 6262; Dirty kickouts = 1261;
+
+	L1 cache cost (Icache $600) + (Dcache $600) = 1200
+	L2 cache cost = $150; Memory cost = $75
+	Total Cost = 1425
